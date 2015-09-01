@@ -1,0 +1,66 @@
+REDBELT PRACTICE QUERIES:
+
+INSERT INTO `redbelt_practice`.`books`
+(`id`,
+`title`,
+`author`,
+`created_at`,
+`updated_at`)
+
+VALUES
+(1,
+'The Great Gatsby',
+'F. Scott Fitzgerald',
+NOW(),
+NOW());
+
+INSERT INTO `redbelt_practice`.`users`
+(`id`,
+`name`,
+`alias`,
+`email`,
+`password`,
+`created_at`,
+`updated_at`)
+
+VALUES
+(1,
+'Bill Phillips',
+'BillJammer',
+'BillPhillips91@gmail.com',
+'Password1',
+NOW(),
+NOW());
+
+INSERT INTO `redbelt_practice`.`reviews`
+(`id`,
+`rating`,
+`content`,
+`created_at`,
+`updated_at`,
+`users_id`,
+`books_id`)
+
+VALUES
+(1,
+5,
+'I loved this book, it had a lot of great qualities and I would read it again for sure.',
+NOW(),
+NOW(),
+1,
+1);
+
+SELECT * 
+FROM books
+
+ORDER BY updated_at DESC
+
+LIMIT 3
+
+SELECT b.title, r.rating, u.name, r.content, r.created_at
+
+FROM reviews r JOIN books b on r.books_id=b.id JOIN users u on r.users_id = u.id
+
+ORDER BY r.updated_at DESC
+
+LIMIT 3
