@@ -1,0 +1,224 @@
+/*global*/
+*{
+	padding: 0px;
+	font-family: sans-serif;
+	margin: 0px;
+	color: lightgray;
+}
+
+body{
+	background-color: #333333;
+	text-align: center;
+}
+body *{
+	text-align: left;
+}
+
+a{
+	color: gold;
+	text-decoration: none;
+}
+
+a:hover{
+	color: lightgray;
+	text-decoration: underline;
+}
+
+h1{
+	display: inline-block;
+	width: 1000px;
+	color: lightgray;
+}
+
+div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+textarea{
+	width: 450px;
+	height: 100px;
+}
+
+form *{
+	display: block;
+	color: lightgray;
+}
+
+#container{
+	width: 1422px;
+}
+
+#header_div{
+	background-color: darkred;
+	width: 1422px;
+	border-bottom: solid black 5px;
+	display: block;
+}
+
+#header_div *{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#current_user_header{
+	margin: 5px 0px 0px 15px;
+}
+
+#current_user_header a{
+	font-size: 80%;
+}
+
+#site_title{
+	margin: 15px 0px 15px 250px;
+	font-family: Impact, "Charcoal", sans-serif;
+	font-size: 250%;
+	color: black;
+	background-color: gray;
+	border: solid black 10px;
+	padding: 0px 10px;
+}
+
+.headlink{
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	margin: 5px 15px 0px 0px;
+}
+
+.submit{
+	padding: 5px;
+	color: black;
+}
+
+/*login page*/
+#login_header_div{
+	background-color: darkred;
+	width: 1422px;
+	border-bottom: solid black 5px;
+	display: block;
+	text-align: center;
+}
+
+#login_header_div *{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#login_site_title{
+	margin: 15px auto;
+	font-family: Impact, "Charcoal", sans-serif;
+	font-size: 250%;
+	color: black;
+	background-color: gray;
+	border: solid black 10px;
+	padding: 0px 10px;
+}
+
+#login_div{
+	background-color: black;
+	border: solid gold 5px;
+	margin: 25px 0px 50px 50px;
+	padding: 10px;
+	float: right;
+}
+
+#register_div{
+	background-color: black;
+	border: solid gold 5px;
+	margin: 25px 50px 50px 50px;
+	padding: 10px;
+	float: right;
+}
+
+#login_div *{
+	margin: 5px;
+	font-weight: bolder;
+	color: white;
+}
+
+#register_div *{
+	margin: 5px;
+	font-weight: bolder;
+	color: white;
+}
+
+#login_div input{
+	color: black;
+}
+
+#register_div .submit{
+	color: black;
+}
+
+#password_reminder{
+	font-weight: normal;
+}
+
+/*books/homepage*/
+#recent_reviews_div{
+	width: 800px;
+	padding: 25px 25px 25px 50px;
+}
+
+#all_books_div{
+	background-color: black;
+	padding: 10px;
+	margin: 25px;
+	height: 100%;
+	overflow-y: scroll;
+	float: right;
+	max-width: 422px;
+}
+
+#all_books_div a{
+	font-size: 90%;
+}
+
+.recent *{
+	margin: 3px;
+}
+
+.recent h2{
+	margin: 10px 0px 0px 0px;
+}
+
+/*add book page*/
+#add_book_header{
+	margin: 25px;
+	display: block;
+}
+#add_book_div{
+	background-color: black;
+	display: inline-block;
+	padding: 10px;
+	margin: 0px 0px 0px 50px;
+}
+#add_book_div *{
+	display: block;
+	margin: 5px;
+}
+#add_book_div input, option, select, textarea{
+	color: black;
+}
+
+/*User profile page*/
+#profile_info_div{
+	margin: 25px 25px 25px 50px;
+}
+
+#profile_info_div h3{
+	margin: 15px 0px 0px 0px;
+}
+
+#profile_reviews_div{
+	margin: 25px 50px 25px 25px;
+	float: right;
+	background-color: black;
+	padding: 10px;
+}
+
+#profile_reviews_div p{
+	font-size: 150%;
+	font-weight: bolder;
+}

@@ -40,10 +40,11 @@
 
 $route['default_controller'] = "main";
 $route['404_override'] = '';
-$route['books'] = "main/load_main_page";
+$route['books'] = "main/index";
 $route['books/books/new_book'] = "books/new_book_and_review";
 $route['users/(:any)'] = "main/userLoad/$1";
-$route['book_reviews/(:any)'] = "main/bookLoad/$1";
+$route['book_reviews/(:any)'] = "books/bookLoad/$1";
+$route['myProfile/(:any)'] = "main/userLoad/$1";
 
 
 /* End of file routes.php */
